@@ -1,6 +1,6 @@
 {
   "name": "@mkusaka/slack-notify-cli",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Send notifications to Slack from the command line",
   "type": "module",
   "main": "./dist/cli.js",
