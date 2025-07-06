@@ -1,5 +1,5 @@
 {
-  "name": "slack-notify-cli",
+  "name": "@mkusaka/slack-notify-cli",
   "version": "1.0.0",
   "description": "Send notifications to Slack from the command line",
   "type": "module",
@@ -8,7 +8,7 @@
     "slack-notify": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc && shx chmod +x dist/*.js",
     "dev": "tsx src/cli.ts",
     "start": "node dist/cli.js",
     "typecheck": "tsc --noEmit",
@@ -43,6 +43,7 @@
     "@typescript-eslint/parser": "^8.35.1",
     "eslint": "^9.30.1",
     "prettier": "^3.6.2",
+    "shx": "^0.4.0",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
