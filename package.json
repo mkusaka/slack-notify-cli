@@ -1,0 +1,49 @@
+{
+  "name": "slack-notify-cli",
+  "version": "1.0.0",
+  "description": "Send notifications to Slack from the command line",
+  "type": "module",
+  "main": "./dist/cli.js",
+  "bin": {
+    "slack-notify": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkusaka/slack-notify-cli.git"
+  },
+  "keywords": [
+    "slack",
+    "notification",
+    "cli",
+    "command-line"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkusaka/slack-notify-cli/issues"
+  },
+  "homepage": "https://github.com/mkusaka/slack-notify-cli#readme",
+  "dependencies": {
+    "@slack/types": "^2.14.0",
+    "@slack/web-api": "^7.9.3",
+    "commander": "^14.0.0",
+    "dotenv": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
