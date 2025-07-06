@@ -1,14 +1,18 @@
-# slack-notify-cli
+# @mkusaka/slack-notify-cli
 
 A simple command-line tool to send notifications to Slack.
 
 ## Installation
 
 ```bash
-pnpm install -g slack-notify-cli
+npm install -g @mkusaka/slack-notify-cli
+# or
+pnpm install -g @mkusaka/slack-notify-cli
+# or
+yarn global add @mkusaka/slack-notify-cli
 ```
 
-Or install locally:
+Or install locally from source:
 
 ```bash
 git clone https://github.com/mkusaka/slack-notify-cli.git
