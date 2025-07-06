@@ -31,6 +31,9 @@
     "url": "https://github.com/mkusaka/slack-notify-cli/issues"
   },
   "homepage": "https://github.com/mkusaka/slack-notify-cli#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@slack/types": "^2.14.0",
     "@slack/web-api": "^7.9.3",
